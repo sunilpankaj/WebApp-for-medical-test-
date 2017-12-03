@@ -1,0 +1,89 @@
+<html>
+<body>
+	
+	<table border=1>
+		<thead>
+			<th>Person_identity</th>
+			<th>hemoglobin</th>
+			<th>TC </th>
+			<th>DC_P</th>
+			<th>DC_L</th>
+			<th>DC_E</th>
+			<th>DC_M</th>
+			<th>DC_B</th>
+			<th>ERS</th>
+			<th>Sugar</th>
+			<th>Urea</th>
+			<th>Creatinin</th>
+			<th>Cholestrol</th>
+			<th>HDL</th>
+			<th>LDL</th>
+			<th>LDH</th>
+			<th>T_G</th>
+			<th>SGOT</th>
+			<th>SGPT</th>
+			<th>ALP</th>
+			<th>Bilirubuim_Total</th>
+			<th>Bilirubuim_Direct</th>
+			<th>Amylase</th>
+			<th>RA</th>
+			<th>CRP</th>
+			<th>ASO</th>
+			<th>ALBUMIN</th>
+			<th>Total_Protin</th>
+			<th>Uric_Acid</th>
+			<th>Calcium</th>
+			<th>Acid_Phasphate</th>
+			<th>Micro_Albumin</th>
+			<th>BT</th>
+			<th>CT</th>
+			<th>Platelate_count</th>
+			
+			
+		</thead>
+		
+		{% for row in rows %}	
+			<tr>
+				<td>{{row[0]}}</td>
+				<td>{{row[1]}}</td>
+				<td>{{row[2]}}</td>
+				<td>{{row[3]}}</td>
+				<td>{{row[4]}}</td>
+				<td>{{row[5]}}</td>
+				<td>{{row[6]}}</td>
+				<td>{{row[7]}}</td>
+				<td>{{row[8]}}</td>
+				<td>{{row[9]}}</td>
+				<td>{{row[10]}}</td>
+				<td>{{row[11]}}</td>
+				<td>{{row[12]}}</td>
+				<td>{{row[13]}}</td>
+				<td>{{row[14]}}</td>
+				<td>{{row[15]}}</td>
+				<td>{{row[16]}}</td>
+				<td>{{row[17]}}</td>
+				<td>{{row[18]}}</td>
+				<td>{{row[19]}}</td>
+				<td>{{row[20]}}</td>
+				<td>{{row[21]}}</td>
+				<td>{{row[22]}}</td>
+				<td>{{row[23]}}</td>
+				<td>{{row[24]}}</td>
+				<td>{{row[25]}}</td>
+				<td>{{row[26]}}</td>
+				<td>{{row[27]}}</td>
+				<td>{{row[28]}}</td>
+				<td>{{row[29]}}</td>
+				<td>{{row[30]}}</td>
+				<td>{{row[31]}}</td>
+				<td>{{row[32]}}</td>
+				<td>{{row[33]}}</td>
+				<td>{{row[34]}}</td>
+				
+			</tr>
+		{% endfor %}	
+
+	</table>
+	<p><a href="{{ url_for('hospital')}}">Back To Home Page</a></p>
+</body>
+</html>
