@@ -1,4 +1,4 @@
-# WebApp-for-medical-test
+# WebApp for medical test
 
 Tutorial:
 basic web app using python-flask,html,css, java script,mariadb.
